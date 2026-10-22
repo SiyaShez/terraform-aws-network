@@ -1,0 +1,27 @@
+# Terraform local state and working files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Plan output files can contain sensitive values
+*.tfplan
+tfplan
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Credentials and editor/OS clutter
+.env
+*.pem
+*.key
+.DS_Store
+Thumbs.db
