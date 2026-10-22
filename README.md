@@ -64,8 +64,20 @@ The resources in this module (VPC, subnets, route tables, internet gateway, secu
 
 ## Evidence / screenshots
 
-- Validated locally with Terraform v1.16.6 and AWS provider v6.70.0: `terraform init` and `terraform validate` succeeded.
-- No `plan` or `apply` against AWS has been run. This is local validation only.
+Local validation with Terraform v1.16.6 and AWS provider v6.70.0:
+
+![terraform version, fmt check and validate succeeding](docs/evidence/terraform-validate.png)
+
+- `terraform fmt -check`, `terraform init`, and `terraform validate` all passed.
+- No `plan` or `apply` against AWS has been run, because that needs AWS credentials. This is local validation only.
+
+Pushing the repository to GitHub:
+
+![git push to GitHub succeeding](docs/evidence/git-push.png)
+
+The published repository:
+
+![GitHub repository page](docs/evidence/github-repo.png)
 
 ## Limitations
 
